@@ -10,6 +10,7 @@ tipo VARCHAR (20) NOT NULL,
 ativo BOOL NOT NULL DEFAULT true,
 cpf VARCHAR(14) NOT NULL UNIQUE );
 
+
 INSERT INTO usuario 
 (nome, email , userName, senha, tipo, cpf)
 VALUES ('José Ferreira','jose','joseferreira@gmail.com','jose123','usuario','44020034332');
