@@ -1,13 +1,14 @@
 <?php
 
 $userName = $_POST['userName'];
-$userLastName = $_POST['userLastName'];
+//$userLastName = $_POST['userLastName'];
+$type = 'cliente';
 $userEmail = $_POST['userEmail'];
 $userCpf = $_POST['userCpf'];
 $userNameUser = $_POST['userNameUser'];
 $userPass = $_POST['userPass'];
 $userConfirmPass = $_POST['userConfirmPass'];
-$userPhone = (string) $_POST['userDDDPhone'] + (string) $_POST['userPhone'];
+/*$userPhone = (string) $_POST['userDDDPhone'] + (string) $_POST['userPhone'];
 $userEstado = $_POST['userEstado'];
 $userCidade = $_POST['userCidade'];
 $userCEP = $_POST['userCEP'];
@@ -15,49 +16,40 @@ $userBairro = $_POST['userBairro'];
 $userRua = $_POST['userRua'];
 $userNumero = $_POST['userNumero'];
 $userComplemento = $_POST['userComplemento'];
+*/
  
 if(empty($userName)){
-    echo ("<script> alert('Insira seu nome') </script>");
-    exit();
+    die("ErroName");
 }
-if(empty($userLastName)){
-    echo ("<script> alert('Insira seu Sobrenome') </script>");
-    exit();
-}
+//if(empty($userLastName)){
+  //  exit("ErroLastName");
+//}
 if(empty($userEmail)){
-    echo ("<script> alert('Insira seu email') </script>");
-    exit();
+    die("ErroEmail");
 }
 if(empty($userCpf)){
-    echo ("<script> alert('Insira seu CPF) </script>");
-    exit();
+    die("ErroCpf");
 }
 if(empty($userNameUser)){
-    echo ("<script> alert('Insira seu nome de usuário') </script>");
-    exit();
+    die("ErroNameUser");
 }
 if(empty($userPass)){
-    echo ("<script> alert('Insira sua senha') </script>");
-    exit();
+    die("ErroPass");
 }
 if(empty($userConfirmPass)){
-    echo ("<script> alert('Confirme sua senha') </script>");
-    exit();
+    die("ErroConfrimPass");
 }
 if($userConfirmPass != $userPass){     
-     echo ("<script> alert('As senhas não coincidem') </script>");
-    exit(); 
+    die("ErroPassConfirm"); 
 }
     
-
+/*
 if(empty($userPhone)){
-    echo ("<script> alert('Insira seu número de telefone') </script>");
-    exit();
+    exit("ErroPhone");
 }
-if(empty($userCidade || $userCEP || $userBairro || $useRua || $userNumero)){
-    echo ("<script> alert('Os dados de endereço foram inseridos incorretamente') </script>");
-    exit();
+if(empty($userCity || $userCEP || $userBairro || $userStreet || $userNumber)){
+    exit("ErroAddress");
 }
-
-
-echo ('<script> alert("Usuário cadastrado com sucesso!!") </script>');
+*/
+include '../model/cadastroModel.php';
+?>
