@@ -1,11 +1,21 @@
 <?php
+session_start();
 
-if(empty($_POST['loginUser']) || empty($_POST['loginPass'])){
+$login = $_POST['login'];
+$pass = $_POST['pass'];
 
-    die ("Usuário ou Senha inválido");
-    header("Location: index.php");
-    exit();
+if (isset($login) && empty($login)) {
+    echo "erroUser";
+    die();
 }
-else{
-include '../model/loginModel.php';
+if (isset($pass) && empty($pass)) {
+    echo "erroPass";
+    die();
 }
+
+include("../model/loginModel.php");
+ 
+
+    
+
+?>

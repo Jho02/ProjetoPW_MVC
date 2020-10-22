@@ -43,7 +43,7 @@
                         <input class="form-control form-control-lg" type="password" name="userConfirmPass" required placeholder="Confirme sua senha">
                     </div>
                 </div>
-                <!-- <div class="form-row ">
+         <div class="form-row ">
                     <div class="col-lg-1 my-3 mx-5 shadow-sm p-0 rounded ">
                         <input class="form-control form-control-lg " name="userDDDPhone" type="text" required placeholder="DDD">
                     </div>
@@ -109,9 +109,7 @@
                     <div class="col-lg-4 my-3 mx-1 shadow-sm p-0 rounded">
                         <input class="form-control form-control-lg" type="text"  name="userComplemento" placeholder="Complemento">
                     </div>
--->
-
-        </div>
+       
         <div class="form-row">
             <div class="col-lg-3 mt-5 mx-auto shadow-sm p-0 rounded">
                 <input class="form-control form-control-lg btn-lg btn btn-outline-success" required type="submit" value="Cadastrar">

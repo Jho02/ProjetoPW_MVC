@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="../../css/bootstrap.css">
+    <?php
+    /* session_start();
+    if ((!isset($_SESSION['loginUser']) == true) && (!isset($_SESSION['loginPass']) == true)) {
+        unset($_SESSION['loginUser']);
+        unset($_SESSION['loginPass']);
+        header('location:index.php');
+    } */
+    ?>
 </head>
 
 <body>

@@ -15,15 +15,15 @@
         <div class="col-lg-12 text-left py-3 pl-5 ">
             <h1 class="display-4"> Realizar login </h1>
         </div>
-        <form action="../../controller/validaLogin.php" method="POST" id="login">
+        <form action="../../controller/validaLogin.php" method="POST" id="loginUsuario">
             <div class="form-row">
                 <div class="col-lg-5 col-md-6 my-4 pt-3 mx-auto shadow-sm p-0 rounded ">
-                    <input class="form-control form-control-lg" name="loginUser" type="text" placeholder="Digite seu nome de usuário ou e-mail">
+                    <input class="form-control form-control-lg" name="login" type="text" placeholder="Digite seu nome de usuário ou e-mail">
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-lg-5 col-md-6 my-4 mx-auto shadow-sm p-0 rounded">
-                    <input class="form-control  form-control-lg" name="loginPass" type="password" placeholder="Digite sua senha">   
+                    <input class="form-control  form-control-lg" name="pass" type="password" placeholder="Digite sua senha">   
                 </div>
             </div>
             <div class="form-row">
