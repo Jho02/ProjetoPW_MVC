@@ -2,10 +2,10 @@
 
 $userName = $_POST['userName'];
 //$userLastName = $_POST['userLastName'];
-$type = 'cliente';
+$type = 'usuario';
 $userEmail = $_POST['userEmail'];
 $userCpf = $_POST['userCpf'];
-$userNameUser = $_POST['userNameUser'];
+$userNameUser = $_POST['nameUser'];
 $userPass = $_POST['userPass'];
 $userConfirmPass = $_POST['userConfirmPass'];
 /*$userPhone = (string) $_POST['userDDDPhone'] + (string) $_POST['userPhone'];
@@ -19,28 +19,28 @@ $userComplemento = $_POST['userComplemento'];
 */
  
 if(empty($userName)){
-    die("ErroName");
+    die("erroName");
 }
 //if(empty($userLastName)){
   //  exit("ErroLastName");
 //}
 if(empty($userEmail)){
-    die("ErroEmail");
+    die("erroEmail");
 }
 if(empty($userCpf)){
-    die("ErroCpf");
+    die("erroCpf");
 }
 if(empty($userNameUser)){
-    die("ErroNameUser");
+    die("erroNameUser");
 }
 if(empty($userPass)){
-    die("ErroPass");
+    die("erroPass");
 }
 if(empty($userConfirmPass)){
-    die("ErroConfrimPass");
+    die("erroConfrimPass");
 }
 if($userConfirmPass != $userPass){     
-    die("ErroPassConfirm"); 
+    die("erroPassConfirm"); 
 }
     
 /*

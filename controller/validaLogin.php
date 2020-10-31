@@ -1,21 +1,25 @@
 <?php
 session_start();
 
-$login = $_POST['login'];
+if(empty($_POST)){
+    header("Location: ../");
+    die();
+}
+
+$login = $_POST['user'];
 $pass = $_POST['pass'];
 
-if (isset($login) && empty($login)) {
-    echo "erroUser";
-    die();
-}
+ if (isset($login) && empty($login)) {
+  echo "ErroUser";
+  die();
+} 
 if (isset($pass) && empty($pass)) {
-    echo "erroPass";
+    echo "ErroPass";
     die();
 }
 
-include("../model/loginModel.php");
+include "../model/loginModel.php";
  
-
     
 
 ?>

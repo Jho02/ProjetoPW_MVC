@@ -2,6 +2,7 @@ CREATE DATABASE Projeto_MVC;
 
 use Projeto_MVC;
 
+describe usuario;
 
 select * from usuario;
 
@@ -21,5 +22,6 @@ INSERT INTO usuario
 VALUES 
 ('José Ferreira','joseferreira@gmail.com','jose','123','44020034332') ,
 ('Joao Ferreira','joaoferreira@gmail.com','joao','123','22040066735552');
+
 
 use projeto_mvc;

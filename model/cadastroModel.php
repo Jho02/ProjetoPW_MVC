@@ -7,7 +7,7 @@ $sql -> bind_param("ssssss", $userName, $userEmail, $userNameUser, $userPass, $t
 
 $sql -> execute() or die("ErroBanco");
 
-echo "Sucesso";
+echo "sucesso";
 
 
 $sql -> close();
